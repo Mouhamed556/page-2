@@ -1,0 +1,78 @@
+/* Style de base pour la navbar */
+body {
+  margin: 0;
+}
+nav {
+  box-sizing: border-box;
+  position: fixed; /* pour qu'elle reste en haut de la page */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0); /* transparent */
+
+  z-index: 1000;
+}
+
+/* Style pour les liens de la navbar */
+nav a {
+  text-decoration: none;
+  color: #f3eded; /* Couleur des liens en noir */
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s, padding 0.3s;
+}
+
+nav a:hover {
+  color: #f39c12; /* Couleur au survol (vous pouvez personnaliser) */
+  padding-bottom: 5px; /* Effet de soulignement visuel */
+}
+nav h2 {
+  color: #f3eded;
+}
+/*            */
+/* Style global pour le main */
+main {
+  height: 100vh; /* Prend toute la hauteur de la fenêtre */
+  display: flex;
+  flex-direction: column; /* Aligne les éléments verticalement */
+  justify-content: center; /* Centre verticalement */
+  align-items: center; /* Centre horizontalement */
+  text-align: center; /* Centre le texte */
+  background-image: url("https://storage.googleapis.com/a1aa/image/ZlfLkHwqL9WaJqRYcC9zFg90RfsUPfTB0Fd3fx2weeeljpx5JA.jpg"); /* Définit l'image de fond */
+  background-size: cover; /* Couvre toute la surface */
+  background-position: center; /* Centrer l'image */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  color: white; /* Texte en blanc pour contraster avec l'arrière-plan */
+  padding: 20px; /* Un peu d'espace autour du contenu */
+  transition: background-image 0.5s ease-in-out;
+}
+
+h1 {
+  font-size: 3rem; /* Taille du titre */
+  margin-bottom: 10px; /* Espacement sous le titre */
+}
+
+p {
+  font-size: 1.2rem; /* Taille du paragraphe */
+  margin-bottom: 20px; /* Espacement sous le paragraphe */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #f39c12; /* Couleur du bouton */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e67e22; /* Couleur au survol du bouton */
+}
